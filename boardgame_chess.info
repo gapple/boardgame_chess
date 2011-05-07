@@ -1,0 +1,5 @@
+
+name = Chess
+description = Extension for Board Game to handle Chess
+core = 6.x
+dependencies[] = boardgame
