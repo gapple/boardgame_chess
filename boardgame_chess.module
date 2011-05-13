@@ -1,6 +1,6 @@
 <?php
 /**
- * Implementation of hook_boardgame_gametypes
+ * Implementation of hook_boardgame_gametypes().
  */
 function boardgame_chess_boardgame_gametypes() {
   return array(
@@ -15,7 +15,7 @@ function boardgame_chess_boardgame_gametypes() {
 /**
  * Create a default starting board layout
  */
-function boardgame_chess_initialize(){
+function boardgame_chess_initialize() {
   $white_template = new stdClass();
   $white_template->type = 'pawn';
   $white_template->set = 'white';
@@ -118,7 +118,7 @@ function boardgame_chess_validate_move($state, $move) {
 /**
  * Render HTML output of game state
  */
-function boardgame_chess_render($game){
+function boardgame_chess_render($game) {
   drupal_add_css(drupal_get_path('module', 'boardgame_chess') .'/boardgame_chess.css');
 
   $unicode = array(
