@@ -13,6 +13,16 @@ function boardgame_chess_boardgame_gametypes() {
 }
 
 /**
+ * Return array for helping to convert files to numeric values
+ */
+function _boardgame_chess_convert() {
+  return array(
+      'a' => 1, 'b' => 2, 'c' => 3, 'd' => 4,
+      'e' => 5, 'f' => 6, 'g' => 7, 'h' => 8,
+    );
+}
+
+/**
  * Create a default starting board layout
  */
 function boardgame_chess_initialize() {
@@ -133,7 +143,7 @@ function boardgame_chess_render($game) {
     'black' => array(
       'king'   => 9818,
       'queen'  => 9819,
-      'rook'   => 9810,
+      'rook'   => 9820,
       'bishop' => 9821,
       'knight' => 9822,
       'pawn'   => 9823,
